@@ -1,0 +1,67 @@
+{
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "image/logo.png",
+    "default_title": "Chrome-extension"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "CITYOCEAN"
+    }
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "css": [
+        "csslib/jquery.toast.min.css",
+        "csslib/chrome.css"
+      ],
+      "js": [
+        "jslib/jquery.js",
+        "jslib/chrome_content.js",
+        "jslib/jquery.toast.min.js",
+        "jslib/jquery.tmpl.min.js"
+      ],
+      "matches": [
+        "*://www.baidu.com/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "jslib/jquery.js",
+      "jslib/background/config.js",
+      "jslib/background/var.base.js",
+      "jslib/background/translator.js",
+      "jslib/background/background.js"
+    ]
+  },
+  "description": "开源用于插件API用法以及学习",
+  "icons": {},
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://cn-icp.cityocean.com/ https://en-icp.cityocean.com/ https://cn-icp.cityocean.com/assets/chrome-extension/co_shipping.js; object-src 'self'",
+  "name": "Tom",
+  "permissions": [
+    "tabs",
+    "storage",
+    "proxy",
+    "cookies",
+    "activeTab",
+    "notifications",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "host_permissions": [],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.0.0",
+  "web_accessible_resources": [
+    "image/*",
+    "*.js",
+    "csslib/*"
+  ]
+}

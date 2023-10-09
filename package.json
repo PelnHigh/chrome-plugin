@@ -1,0 +1,15 @@
+{
+  "name": "co-chrome-extensions",
+  "version": "1.0.0",
+  "description": "谷歌插件实例，支持自定义采集功能，仅仅用作学习和展示",
+  "scripts": {
+    "build:prod": "node scripts/copy.js && node scripts/version.js && javascript-obfuscator icp-ext --output dist/chrome-ext && node scripts/zip.js"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "adm-zip": "^0.5.9",
+    "chrome-types": "^0.1.151",
+    "fs-extra": "^10.1.0",
+    "javascript-obfuscator": "^4.0.0"
+  }
+}

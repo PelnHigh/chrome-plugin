@@ -1,0 +1,461 @@
+#header_data {
+  color: #fff;
+  cursor: move;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background: #1890ff;
+  padding-left: 5px;
+}
+
+.fold {
+  right: -875px !important;
+}
+
+.chrome_tips {
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+  font-size: 12px;
+  color: #1890ff;
+  cursor: pointer;
+}
+
+.chrome_tips span {
+  font-weight: 800;
+}
+
+.danger {
+  color: #e55354 !important;
+}
+
+.disabled {
+  color: #666 !important;
+  cursor: no-drop !important;
+}
+
+.chrome_chrome_search {
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+}
+
+.chrome_chrome_search input,
+.chrome_chrome_title input {
+  flex: 1;
+  margin: 6px 0 6px 6px;
+  height: 20px;
+  border: 1px solid #999;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+  padding: 0 4px;
+}
+
+.chrome_chrome_search button,
+.chrome_chrome_title button {
+  cursor: pointer;
+  background: #1890ff;
+  border: none;
+  color: #fff;
+  height: 24px;
+  align-self: center;
+  margin-right: 12px;
+  border-radius: 0 4px 4px 0;
+  font-size: 14px;
+}
+
+#login,
+#chrome_user_info {
+  cursor: pointer;
+  background: #1890ff;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  width: 150px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 15px;
+  position: absolute;
+  z-index: 999999;
+  color: #fff;
+  top: 0;
+}
+
+#chrome_user_action {
+  cursor: pointer;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  font-weight: 800;
+  font-size: 20px;
+  color: #1890ff;
+}
+
+#chrome_user_body {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  resize: both;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 900px;
+  max-height: 700px;
+  box-shadow: 0px 0px 10px #666;
+  z-index: 999999;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow-x: hidden;
+}
+
+#chrome_user_content {
+  /* cursor: default !important; */
+}
+
+#chrome_chrome_search_text {
+  margin-left: 36px;
+}
+
+#chrome_user_body .title {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 800;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 4px 3px;
+}
+
+#chrome_user_body .title img {
+  align-self: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+#chrome_user_content {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+#chrome_user_content .table_data {
+  background: #fff !important;
+}
+
+#chrome_user_content .table_data div {
+  font-weight: 500 !important;
+  font-size: 12px;
+  padding: 3px 0 3px 3px;
+}
+
+#chrome_user_content .no_data {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 6px 0;
+}
+
+#chrome_user_content .no_data img {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
+#chrome_user_tips {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  color: #fff;
+  z-index: 99999999;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#chrome_user_tips span {
+  padding: 0 12px;
+}
+
+/* 底部 */
+#chrome_user_bottom {
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  border: 1px solid #1890ff;
+  border-radius: 5px 5px 0 0;
+  background-color: #1890ff;
+  color: #fff;
+  height: 30px;
+  z-index: 99999;
+  line-height: 30px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.table_data {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e7e7e7;
+}
+
+.table_data div {
+  color: #000;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 0 0 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table_data div:hover {
+  color: #1890ff !important;
+}
+
+.spinner {
+  margin: 80px auto;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #1890ff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  /* 滚动条整体样式 */
+  width: 12px;
+
+  /* 高宽分别对应横竖滚动条的尺寸 */
+  height: 12px;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  /* 滚动条里面小方块 */
+  border-radius: 8px;
+  outline: 0;
+  box-shadow: inset 0 0 5px #999;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  background-color: rgb(202, 202, 202);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-color: rgb(188, 188, 188);
+  background-color: rgb(188, 188, 188);
+  box-shadow: none;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+
+  /* 滚动条里面轨道 */
+  -webkit-box-shadow: inset 0 0 8px #fff;
+  box-shadow: inset 0 0 5px #fff;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+* {
+  scrollbar-color: #cacaca transparent;
+  scrollbar-width: thin;
+}
+
+#chrome_extensions_loading {
+  display: none;
+  width: 300px;
+  background: #f2f2f2;
+  box-shadow: 0 0 5px #1890ff;
+  height: 120px;
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  z-index: 99999;
+  opacity: 0.95;
+  border-radius: 8px;
+}
+
+#chrome_extensions_loading-lds-ring {
+  display: none;
+  /* display: inline-block; */
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 25px;
+  left: 20px;
+}
+#chrome_extensions_loading-lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  border: 4px solid #1890ff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #1890ff transparent transparent transparent;
+}
+#chrome_extensions_loading-lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+#chrome_extensions_loading-lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+#chrome_extensions_loading-lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+#chrome_extensions_loading_text {
+  color: #000;
+  position: relative;
+  top: 20px;
+  width: 100%;
+  left: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#chrome_extensions_loading_tips {
+  cursor: pointer;
+  color: #1890ff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 6px 0 0 6px;
+}
+
+#chrome_extensions_loading_tips img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+#chrome_extensions_process {
+  margin: 0 12px;
+  height: 20px;
+  position: absolute;
+  background: #555;
+  border-radius: 25px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  left: 0;
+  bottom: 12px;
+  width: 276px;
+}
+
+#chrome_extensions_process > span {
+  width: 25%;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43, 194, 83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43, 194, 83) 37%,
+    rgb(84, 240, 84) 69%
+  );
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+#chrome_extensions_process_tips {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#chrome_extensions_loading_close {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  font-weight: 700;
+}
